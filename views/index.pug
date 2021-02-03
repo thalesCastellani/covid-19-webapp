@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+    section#content
+        p
+        h2 List of States:
+        each state in statesCurrent
+            ul
+                p
+                li Date: #{state.date}
+                li State: #{state.state}
+                li Death: #{state.death}
+                li Total: #{state.total}
+
